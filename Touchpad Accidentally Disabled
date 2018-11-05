@@ -1,0 +1,5 @@
+Touchpad accidentally disabled by the slip on your hand in the settings menu?
+
+$gsettings set org.gnome.desktop.peripherals.touchpad send-events 'enabled'
+
+Simpler Solution: Plug in a mouse and enable from GUI Settings option :P
