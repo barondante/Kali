@@ -1,0 +1,15 @@
+$sudo apt-get install alacarte
+
+Applications -> Usual Applications -> Accessories -> Main Menu
+
+Browse to the right folder
+
+New Item
+
+Name - name
+
+Command - path of exectutable
+
+Comment - what type of program is it?
+
+Top left corner - browse and add icon of exec
