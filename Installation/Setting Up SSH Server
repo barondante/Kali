@@ -1,0 +1,22 @@
+// Did this for WinSCP
+
+$ sudo su -
+# mkdir -p /data/sftp
+# chmod 701 /data
+# groupadd sftp_users
+# useradd -g sftp_users -d /upload -s /sbin/nologin librarian
+# passwd librarian
+# mkdir -p /data/librarian/upload
+# chown -R root:sftp_users /data/librarian
+# chown -R librarian:sftp_users /data/librarian/upload
+# nano /etc/ssh/sshd_config
+
+// Bottom of the file
+
+Match Group sftp_users ChrootDirectory /data/%u ForceCommand internal_sftp
+
+# service ssh restart
+# cd /data/librarian/upload
+# ls
+
+//Shared files can be found here
