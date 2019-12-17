@@ -1,0 +1,27 @@
+$ git clone https://www.github.com/about3la/Sublist3r.git
+
+Dependencies
+
+1. requests
+2. dnspython
+3. argparse
+
+$ sudo pip install -r requirements.txt
+
+OR
+
+1. requests:
+
+$ sudo apt-get install python-requests
+
+2. dnspython:
+
+$ sudo apt-get install python-dnspython
+
+3. argparse
+
+$ sudo apt-get install python-argparse
+
+Usage example:
+
+$ python sublist3r.py -d example.com > exadom.txt
